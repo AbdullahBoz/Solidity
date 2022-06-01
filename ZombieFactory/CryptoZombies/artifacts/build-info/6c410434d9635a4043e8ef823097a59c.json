@@ -1,0 +1,470 @@
+{
+	"id": "6c410434d9635a4043e8ef823097a59c",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.17",
+	"solcLongVersion": "0.5.17+commit.d19bba13",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"CryptoZombies/ZombieFactory.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.5.0 < 0.6.0;\r\n\r\ncontract ZombieFactory{\r\n\r\n    uint dnaDigits = 16;\r\n    uint dnaModulus = 1^6;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"CryptoZombies/ZombieFactory.sol": {
+				"ZombieFactory": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"CryptoZombies/ZombieFactory.sol\":75:157  contract ZombieFactory{\r... */\n  mstore(0x40, 0x80)\n    /* \"CryptoZombies/ZombieFactory.sol\":123:125  16 */\n  0x10\n    /* \"CryptoZombies/ZombieFactory.sol\":106:125  uint dnaDigits = 16 */\n  0x00\n  sstore\n    /* \"CryptoZombies/ZombieFactory.sol\":150:153  1^6 */\n  0x07\n    /* \"CryptoZombies/ZombieFactory.sol\":132:153  uint dnaModulus = 1^6 */\n  0x01\n  sstore\n    /* \"CryptoZombies/ZombieFactory.sol\":75:157  contract ZombieFactory{\r... */\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"CryptoZombies/ZombieFactory.sol\":75:157  contract ZombieFactory{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"CryptoZombies/ZombieFactory.sol\":75:157  contract ZombieFactory{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa265627a7a723158208156446a87a4e0104508344432c70d6d80638dc2fd9b466bc539be356d632b8d64736f6c63430005110032\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "608060405260106000556007600155348015601957600080fd5b50603e8060276000396000f3fe6080604052600080fdfea265627a7a723158208156446a87a4e0104508344432c70d6d80638dc2fd9b466bc539be356d632b8d64736f6c63430005110032",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x10 PUSH1 0x0 SSTORE PUSH1 0x7 PUSH1 0x1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x19 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x27 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 DUP2 JUMP DIFFICULTY PUSH11 0x87A4E0104508344432C70D PUSH14 0x80638DC2FD9B466BC539BE356D63 0x2B DUP14 PUSH5 0x736F6C6343 STOP SDIV GT STOP ORIGIN ",
+							"sourceMap": "75:82:0:-;;;123:2;106:19;;150:3;132:21;;75:82;8:9:-1;5:2;;;30:1;27;20:12;5:2;75:82:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea265627a7a723158208156446a87a4e0104508344432c70d6d80638dc2fd9b466bc539be356d632b8d64736f6c63430005110032",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 DUP2 JUMP DIFFICULTY PUSH11 0x87A4E0104508344432C70D PUSH14 0x80638DC2FD9B466BC539BE356D63 0x2B DUP14 PUSH5 0x736F6C6343 STOP SDIV GT STOP ORIGIN ",
+							"sourceMap": "75:82:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12400",
+								"executionCost": "40078",
+								"totalCost": "52478"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 123,
+									"end": 125,
+									"name": "PUSH",
+									"value": "10"
+								},
+								{
+									"begin": 106,
+									"end": 125,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 106,
+									"end": 125,
+									"name": "SSTORE"
+								},
+								{
+									"begin": 150,
+									"end": 153,
+									"name": "PUSH",
+									"value": "7"
+								},
+								{
+									"begin": 132,
+									"end": 153,
+									"name": "PUSH",
+									"value": "1"
+								},
+								{
+									"begin": 132,
+									"end": 153,
+									"name": "SSTORE"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "POP"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "DUP1"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 75,
+									"end": 157,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a265627a7a723158208156446a87a4e0104508344432c70d6d80638dc2fd9b466bc539be356d632b8d64736f6c63430005110032",
+									".code": [
+										{
+											"begin": 75,
+											"end": 157,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 75,
+											"end": 157,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 75,
+											"end": 157,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 75,
+											"end": 157,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 75,
+											"end": 157,
+											"name": "DUP1"
+										},
+										{
+											"begin": 75,
+											"end": 157,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"CryptoZombies/ZombieFactory.sol\":\"ZombieFactory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"CryptoZombies/ZombieFactory.sol\":{\"keccak256\":\"0x0c7efce7ca8fc4f9141f638511aa570866c62e9758884423ba8fe78fa92090c9\",\"urls\":[\"bzz-raw://c037c12a8b19d7ba16881ef8b18dff286e4a98e2bd4472c9ac593d9869ee22da\",\"dweb:/ipfs/QmUTYwcSea2Gv5nQnB3kARzNhpCtmsfbtiScGWDFDWyuzw\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 4,
+								"contract": "CryptoZombies/ZombieFactory.sol:ZombieFactory",
+								"label": "dnaDigits",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 9,
+								"contract": "CryptoZombies/ZombieFactory.sol:ZombieFactory",
+								"label": "dnaModulus",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_uint256"
+							}
+						],
+						"types": {
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"CryptoZombies/ZombieFactory.sol": {
+				"ast": {
+					"absolutePath": "CryptoZombies/ZombieFactory.sol",
+					"exportedSymbols": {
+						"ZombieFactory": [
+							10
+						]
+					},
+					"id": 11,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.5",
+								".0",
+								"<",
+								"0.6",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:32:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "ZombieFactory",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 4,
+									"name": "dnaDigits",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "106:19:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "106:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "3136",
+										"id": 3,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "123:2:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_16_by_1",
+											"typeString": "int_const 16"
+										},
+										"value": "16"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"name": "dnaModulus",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "132:21:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 5,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "132:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"commonType": {
+											"typeIdentifier": "t_rational_7_by_1",
+											"typeString": "int_const 7"
+										},
+										"id": 8,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"lValueRequested": false,
+										"leftExpression": {
+											"argumentTypes": null,
+											"hexValue": "31",
+											"id": 6,
+											"isConstant": false,
+											"isLValue": false,
+											"isPure": true,
+											"kind": "number",
+											"lValueRequested": false,
+											"nodeType": "Literal",
+											"src": "150:1:0",
+											"subdenomination": null,
+											"typeDescriptions": {
+												"typeIdentifier": "t_rational_1_by_1",
+												"typeString": "int_const 1"
+											},
+											"value": "1"
+										},
+										"nodeType": "BinaryOperation",
+										"operator": "^",
+										"rightExpression": {
+											"argumentTypes": null,
+											"hexValue": "36",
+											"id": 7,
+											"isConstant": false,
+											"isLValue": false,
+											"isPure": true,
+											"kind": "number",
+											"lValueRequested": false,
+											"nodeType": "Literal",
+											"src": "152:1:0",
+											"subdenomination": null,
+											"typeDescriptions": {
+												"typeIdentifier": "t_rational_6_by_1",
+												"typeString": "int_const 6"
+											},
+											"value": "6"
+										},
+										"src": "150:3:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_7_by_1",
+											"typeString": "int_const 7"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 11,
+							"src": "75:82:0"
+						}
+					],
+					"src": "39:118:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
